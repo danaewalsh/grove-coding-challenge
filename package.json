@@ -1,0 +1,22 @@
+{
+  "name": "grove-coding-challenge",
+  "version": "1.0.0",
+  "description": "Coding challenge for Grove Collaborative",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danaewalsh/grove-coding-challenge.git"
+  },
+  "author": "Dana Walsh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/danaewalsh/grove-coding-challenge/issues"
+  },
+  "homepage": "https://github.com/danaewalsh/grove-coding-challenge#readme",
+  "dependencies": {
+    "node-fetch": "^2.6.1"
+  }
+}
