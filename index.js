@@ -12,7 +12,6 @@ const orderAccounting = async function (orderNumber) {
   let orderDetailsResponse = await helper.apiRequests.orderDetails(orderNumber)
   let orderInfo = await orderDetailsResponse.json();
 
-
   // using zip code from order details, fetch tax rate using helper function
 
   let taxRateResponse = await helper.apiRequests.taxRate(orderInfo.zip_code);
@@ -48,7 +47,6 @@ const orderAccounting = async function (orderNumber) {
 
   accountingDetails.Total = Math.round(100 * (accountingDetails.Subtotal + accountingDetails.Taxes))/100;
 
-  console.log(accountingDetails);
   return accountingDetails;
 }
 
